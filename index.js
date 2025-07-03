@@ -158,9 +158,9 @@ app.get('/api/users/:_id/logs', (req, res) => {
   }));
 
   res.json({
-    _id: user._id,
     username: user.username,
     count: formattedLog.length,
+    _id: user._id,
     log: formattedLog
   });
 });
